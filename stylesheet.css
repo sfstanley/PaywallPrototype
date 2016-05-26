@@ -30,14 +30,15 @@ body {
 
 #container {
 	background-repeat: no-repeat;
-	margin: 1000px auto 0px;
+	margin: 1000px auto 100px;
 	height: 667px;
 	width: 375px;
 	background-image: url("assets/atbat_no_header.png");
 	animation-name: containerEntrance;
-	animation-duration: 1s;
+	animation-duration: 0.4s;
 	animation-delay: 1s;
 	animation-fill-mode: forwards;
+	animation-timing-function: ease-out;
 }
 
 @keyframes containerEntrance {
@@ -51,8 +52,8 @@ body {
 	padding-top: 150px;
 	opacity: 0;
 	animation-name: headerEntrance;
-	animation-duration: 1s;
-	animation-delay: 2s;
+	animation-duration: 1.5s;
+	animation-delay: 1.5s;
 	animation-fill-mode: forwards;
 	animation-timing-function: ease-in-out;
 }
