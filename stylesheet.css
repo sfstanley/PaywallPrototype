@@ -28,9 +28,16 @@ body {
 	top: 0px;
 }
 
+#phone_case {
+	position: fixed;
+	top: 0;
+	left: 50%;
+	margin-left: -206px;
+}
+
 #container {
 	background-repeat: no-repeat;
-	margin: 1000px auto 100px;
+	margin: 1000px auto 1000px;
 	height: 667px;
 	width: 375px;
 	background-image: url("assets/atbat_no_header.png");
@@ -43,7 +50,7 @@ body {
 
 @keyframes containerEntrance {
 	from { margin-top: 1000px;}
-	to { margin-top: 0px;}
+	to { margin-top: 108px;}
 }
 
 #header_container {
