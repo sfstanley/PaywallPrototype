@@ -1,0 +1,104 @@
+@font-face {
+  font-family: SFUI-Display;
+  src: local("SF UI Display"),
+       local("SF-UI-Display"),
+       url(SF-UI-Display-Bold.otf);
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: SFUI-Text;
+  src: local("SF UI Text"),
+       local("SF-UI-Text"),
+       url(SF-UI-Text-Medium.otf);
+  font-weight: medium;
+}
+@font-face {
+  font-family: SFUI-Text;
+  src: local("SF UI Text"),
+       local("SF-UI-Text"),
+       url(SF-UI-Text-Bold.otf);
+  font-weight: bold;
+}
+
+body {
+	background-color: gray;
+	height: 100%;
+	width: 100%;
+	top: 0px;
+}
+
+#container {
+	background-repeat: no-repeat;
+	margin: 1000px auto 0px;
+	height: 667px;
+	width: 375px;
+	background-image: url("/assets/atbat_no_header.png");
+	animation-name: containerEntrance;
+	animation-duration: 1s;
+	animation-delay: 1s;
+	animation-fill-mode: forwards;
+}
+
+@keyframes containerEntrance {
+	from { margin-top: 1000px;}
+	to { margin-top: 0px;}
+}
+
+#header_container {
+	margin: 0 auto;
+	width: 375px;
+	padding-top: 150px;
+	opacity: 0;
+	animation-name: headerEntrance;
+	animation-duration: 1s;
+	animation-delay: 2s;
+	animation-fill-mode: forwards;
+	animation-timing-function: ease-in-out;
+}
+
+@keyframes headerEntrance {
+	0% { 
+		padding-top: 150px;
+		opacity: 0;
+		}
+	100% { 
+		padding-top: 60px;
+		opacity: 1;
+	}
+}
+
+#title_image {
+	width: 250px;
+	height: 46px;
+	display: block;
+	margin: 0px auto 17px;
+}
+
+.header_text {
+	color: white;
+	margin: 0 auto;
+	text-align: center;
+}
+
+#headline {
+	width: 320px;
+	font-size: 24px;
+	font-family: SFUI-Display;
+	margin-bottom: 56px;
+}
+
+#description_label, #description_link {
+	width: 290px;
+	font-size: 18px;
+	font-family: SFUI-Text;
+}
+
+#description_label {
+	font-weight: medium;
+	margin-bottom: 29px;
+}
+
+#description_link {
+	font-weight: bold;
+}
